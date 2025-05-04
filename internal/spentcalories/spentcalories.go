@@ -122,25 +122,25 @@ func RunningSpentCalories(steps int, weight, height float64, duration time.Durat
 
 	if steps <= 0 {
 		err := fmt.Errorf("количество шагов %d<=0", steps)
-		log.Print(err.Error())
+		//log.Print(err.Error())
 		return 0, err
 	}
 
 	if weight <= 0 {
 		err := fmt.Errorf("вес %.2f<=0", weight)
-		log.Print(err.Error())
+		//log.Print(err.Error())
 		return 0, err
 	}
 
 	if height <= 0 {
 		err := fmt.Errorf("рост %.2f<=0", height)
-		log.Print(err.Error())
+		//log.Print(err.Error())
 		return 0, err
 	}
 
 	if duration <= 0 {
 		err := fmt.Errorf("некорректная длительность %s", duration)
-		log.Print(err.Error())
+		//log.Print(err.Error())
 		return 0, err
 	}
 
